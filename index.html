@@ -1,0 +1,110 @@
+<h1 id="title">Myers - Briggs Type Indicator (MBTI) Personality Test</h1>
+<div id="form-outer">
+  <p id="description">
+    This is a surver form that tries to collect information regarding your MBTI result. <br> If you don't know yet what your MBTI is, you can get it <a href="https://www.16personalities.com/free-personality-test">here</a>.
+  </p>
+  <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">What is your biological sex by birth?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="student">Male</option>
+      <option value="job">Female</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* Based on the MBTI test, are you Assertive (A) or Turbulent (T)?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Assertive (A)<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Turbulent (T)<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">* From the scale of 1 - 10, with 1 as the lowest and 10 as the highest, rate the reliabality of the MBTI as a form of personality test. </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">What is the result of your MBTI test?<br> (Select one only) </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">ISTJ</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">ISTP</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">ISFJ</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">ISFP</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">INTJ</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">INTP</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">INFJ</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">INFJ</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">INFP</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">ESTP</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">ESTJ</label></li>
+          <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="userRatings">ESFP</label></li>
+          <li class="checkbox"><label><input name="prefer" value="12" type="checkbox" class="userRatings">ESFJ</label></li>
+          <li class="checkbox"><label><input name="prefer" value="13" type="checkbox" class="userRatings">ENTJ</label></li>
+          <li class="checkbox"><label><input name="prefer" value="14" type="checkbox" class="userRatings">ENTP</label></li>
+          <li class="checkbox"><label><input name="prefer" value="15" type="checkbox" class="userRatings">ENFJ</label></li>
+          <li class="checkbox"><label><input name="prefer" value="16" type="checkbox" class="userRatings">ENFP</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">How did you arrived at your answer with regards to the reliability of the MBTI Personality test above?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your answer here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
